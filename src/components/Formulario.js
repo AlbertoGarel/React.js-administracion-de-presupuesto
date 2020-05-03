@@ -45,7 +45,7 @@ const Formulario = ({ agregarNuevoGasto }) => {
         <label>Nombre gasto</label>
         <input
           type="text"
-          classname="u-full-width"
+          className="u-full-width"
           placeholder="Ej. Transporte"
           value={nombre}
           onChange={ev => guardarNombre(ev.target.value)}
@@ -55,7 +55,7 @@ const Formulario = ({ agregarNuevoGasto }) => {
         <label>Cantidad gasto</label>
         <input
           type="number"
-          classname="u-full-width"
+          className="u-full-width"
           placeholder="Ej. 300"
           value={cantidad}
           onChange={ev => guardarCantidad(parseInt(ev.target.value, 10))}
