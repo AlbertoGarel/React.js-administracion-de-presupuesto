@@ -28,7 +28,6 @@ const Pregunta = ({
     //success
     guardarError(false);
     guardaPresupuesto(cantidad);
-    guardarCantidad(cantidad);
     guardarRestante(cantidad);
     actualizarPregunta(false);
   };

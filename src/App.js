@@ -18,11 +18,10 @@ function App() {
     //add new expenditure
     if (creargasto) {
       guardarGastos([...gastos, gasto]);
+      //subtract from current budget
+      let presupuestoRestante = restante - gasto.cantidad;
+      guardarRestante(presupuestoRestante);
     }
-    //subtract from current budget
-    const presupuestoRestante = restante - gasto.cantidad;
-    guardarRestante(presupuestoRestante);
-
     //reset
     guardarCrearGasto(false);
   }, [gasto, creargasto, gastos, restante]);
